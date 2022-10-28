@@ -1,6 +1,6 @@
 import pytest
 import sys
-sys.path.insert(0,"Users/Lorenzo/Documents/programacion/2.Desarrollo_OO/examen_28_octubre/Ejercicio_3")
+sys.path.insert(0,"/Users/Lorenzo/Documents/programacion/2.Desarrollo_OO/examen_28_octubre/Ejercicio_3")
 from Star_Wars import Nave,orden_nombres
 #nos creamos todas las naves que vamos a usar
 nave_1 = Nave("Halcón Milenario", 34.37, 4, 6)
