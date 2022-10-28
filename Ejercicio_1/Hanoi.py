@@ -4,10 +4,8 @@ def moverTorre(altura,origen, destino, intermedio):
         moverDisco(origen,destino)
         moverTorre(altura-1,intermedio,destino,origen)
 
-def moverDisco(desde,hacia,contador=0):
+def moverDisco(desde,hacia):
     print("mover disco de",desde,"a",hacia)
-    contador += 1
-    print("movimientos totales:",contador)
 
 # moverTorre(3,"A","B","C")# Ejemplo sencillo con solo tres agujas
 moverTorre(64,"A","B","C")# Ejemplo sencillo con solo tres agujas
