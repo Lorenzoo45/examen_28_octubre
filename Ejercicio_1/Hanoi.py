@@ -11,3 +11,5 @@ def moverDisco(desde,hacia):
 moverTorre(64,"A","B","C")# Ejemplo sencillo con solo tres agujas
 
 #El número de movimientos necesarios para mover correctamente una torre de 64 discos es 264−1
+
+#tengo que poner las condiciones para que no pete el programa
