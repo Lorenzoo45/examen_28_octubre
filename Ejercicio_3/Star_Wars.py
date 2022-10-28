@@ -28,20 +28,7 @@ def orden_largo(lista):
 def cinco_mayores(lista):
     lista.sort(key=lambda nave: nave.pasajeros, reverse=True)
     return lista[:5]
-#nos creamos todas las naves que vamos a usar
-nave_1 = Nave("Halcón Milenario", 34.37, 4, 6)
-nave_2 = Nave("Estrella de la Muerte", 120000, 342953, 843342)
-nave_3 = Nave("AT-AT", 20, 5, 40)
-nave_4 = Nave("AT-ST", 2, 2, 0)
-nave_5 = Nave("AT-TE", 5, 2, 0)
-nave_6 = Nave("AT-PT", 3, 2, 0)
-nave_7 = Nave("AT-AT Walker", 20, 5, 40)
-listaNaves = [nave_1,nave_2,nave_3,nave_4,nave_5,nave_6,nave_7]
-orden_nombres(listaNaves)
-for nave in listaNaves:
-    print(nave)
-for nave in cinco_mayores(listaNaves):
-    print(nave)
+
 
 # • mostrar toda la información del “Halcón Milenario” y la “Estrella de la Muerte”;
 def mostrar_info(lista):
