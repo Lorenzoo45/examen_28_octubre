@@ -26,3 +26,4 @@ for nave in naves_ordenadas:
     print(nave)
 # for nave in cinco_mayores(listaNaves):
 #     print(nave)
+

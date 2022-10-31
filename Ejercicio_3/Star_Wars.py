@@ -9,6 +9,9 @@
 
 
 
+from audioop import reverse
+
+
 class Nave():
     def __init__(self,nombre, largo, tripulación ,pasajeros):
         self.nombre = nombre
@@ -32,7 +35,7 @@ def cinco_mayores(lista):
 
 #nave con mayor tripulación
 def mayor_tripulacion(lista):
-    lista.sort(key=lambda nave: nave.tripulación)
+    lista.sort(key=lambda nave: nave.tripulación, reverse=True)
     return lista[0]
 #naves que empiezan con AT
 def empieza_con_AT(lista):
@@ -49,7 +52,7 @@ def nave_pequeña(lista):
     lista.sort(key=lambda nave: nave.largo)
     return str(lista[0])
 def nave_grande(lista):
-    lista.sort(key=lambda nave: nave.largo)
+    lista.sort(key=lambda nave: nave.largo, reverse = True)
     return str(lista[0])
 
 
