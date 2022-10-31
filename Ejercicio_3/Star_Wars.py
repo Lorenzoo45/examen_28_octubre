@@ -26,17 +26,13 @@ def orden_largo(lista):
     lista.sort(key=lambda nave: nave.largo, reverse=True)
     return lista
 def cinco_mayores(lista):
-    lista.sort(key=lambda nave: nave.pasajeros, reverse=True)
+    lista.sort(key=lambda nave: nave.pasajeros)
     return lista[:5]
 
 
-# • mostrar toda la información del “Halcón Milenario” y la “Estrella de la Muerte”;
-def mostrar_info(lista):
-    for nave in lista:
-        str(nave)
 #nave con mayor tripulación
 def mayor_tripulacion(lista):
-    lista.sort(key=lambda nave: nave.tripulación, reverse=True)
+    lista.sort(key=lambda nave: nave.tripulación)
     return lista[0]
 #naves que empiezan con AT
 def empieza_con_AT(lista):
@@ -53,6 +49,10 @@ def nave_pequeña(lista):
     lista.sort(key=lambda nave: nave.largo)
     return str(lista[0])
 def nave_grande(lista):
-    lista.sort(key=lambda nave: nave.largo, reverse=True)
+    lista.sort(key=lambda nave: nave.largo)
     return str(lista[0])
+
+
+
+
 

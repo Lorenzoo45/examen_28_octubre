@@ -1,12 +1,13 @@
 #lanzador
 import sys
+from Ejercicio_3.Star_Wars import cinco_mayores, orden_largo
 sys.path.insert(0,"/Users/Lorenzo/Documents/programacion/2.Desarrollo_OO/examen_28_octubre/Ejercicio_3")
 from Star_Wars import *
 
 
 
 #nos creamos todas las naves que vamos a usar
-nave_1 = Nave("Halcón Milenario", 34.37, 4, 6)
+nave_1 = Nave("Halcón Milenario", 34.37, 4, 6)*
 nave_2 = Nave("Estrella de la Muerte", 120000, 342953, 843342)
 nave_3 = Nave("AT-AT", 20, 5, 40)
 nave_4 = Nave("AT-ST", 2, 2, 0)
@@ -33,6 +34,20 @@ def pruebas():
             print("Ordenamos las naves por nombre: ")
             naves_ordenadas = orden_nombres(listaNaves)
             print(naves_ordenadas)
+            print("Ordenamos las naves por el largo: ")
+            naves_ordenadas2 = orden_largo(listaNaves)
+            print(naves_ordenadas2)
+            print("Eneseñamos las 5 mayores: ")
+            naves_ordenadas3 = cinco_mayores(listaNaves)
+            print(naves_ordenadas3)
+            print("Mostramos la info del halcon milenario y de la estrella de la muerte: ")
+            print(nave_1)
+            print(nave_2)
+            print("Mostramos la nave con mayor tripulacion: ")
+            print()
+
+
+
 
             
 
